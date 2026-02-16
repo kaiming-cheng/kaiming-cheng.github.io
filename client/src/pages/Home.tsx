@@ -87,48 +87,62 @@ export default function Home() {
         />
 
         <div className="container relative z-10">
-          <div className="max-w-4xl">
-            <motion.div
-              initial={{ opacity: 0, y: 40 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2, ease: [0.34, 1.56, 0.64, 1] }}
-            >
-              <h1 className="mb-8">
-                Kaiming Cheng
-              </h1>
+          <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+            <div className="flex-1 max-w-2xl">
               <motion.div
-                initial={{ width: 0 }}
-                animate={{ width: "100px" }}
-                transition={{ duration: 0.8, delay: 0.6 }}
-                className="hairline mb-8"
+                initial={{ opacity: 0, y: 40 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2, ease: [0.34, 1.56, 0.64, 1] }}
+              >
+                <h1 className="mb-8">
+                  Kaiming Cheng
+                </h1>
+                <motion.div
+                  initial={{ width: 0 }}
+                  animate={{ width: "100px" }}
+                  transition={{ duration: 0.8, delay: 0.6 }}
+                  className="hairline mb-8"
+                />
+                <p className="text-xl md:text-2xl text-muted-foreground mb-6 leading-relaxed font-light">
+                  Research Scientist at <span className="text-foreground font-medium">Meta Superintelligence Lab</span>
+                </p>
+                <p className="text-lg text-muted-foreground mb-12 leading-relaxed max-w-2xl">
+                  Building autonomous systems for GPU kernel generation. Previously researched security and privacy in augmented reality at the University of Washington.
+                </p>
+                <div className="flex gap-4">
+                  <Button
+                    variant="default"
+                    size="lg"
+                    className="kinetic-hover"
+                    asChild
+                  >
+                    <a href="#work">View Work</a>
+                  </Button>
+                  <Button
+                    variant="outline"
+                    size="lg"
+                    className="kinetic-hover"
+                    asChild
+                  >
+                    <a href="https://github.com/meta-pytorch/KernelAgent" target="_blank" rel="noopener noreferrer">
+                      <Github className="mr-2 h-4 w-4" />
+                      KernelAgent
+                    </a>
+                  </Button>
+                </div>
+              </motion.div>
+            </div>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+              className="flex-shrink-0"
+            >
+              <img
+                src="/headshot.png"
+                alt="Kaiming Cheng"
+                className="w-64 h-64 lg:w-80 lg:h-80 rounded-full object-cover shadow-2xl ring-4 ring-border/50"
               />
-              <p className="text-xl md:text-2xl text-muted-foreground mb-6 leading-relaxed font-light">
-                Research Scientist at <span className="text-foreground font-medium">Meta Superintelligence Lab</span>
-              </p>
-              <p className="text-lg text-muted-foreground mb-12 leading-relaxed max-w-2xl">
-                Building autonomous systems for GPU kernel generation. Previously researched security and privacy in augmented reality at the University of Washington.
-              </p>
-              <div className="flex gap-4">
-                <Button
-                  variant="default"
-                  size="lg"
-                  className="kinetic-hover"
-                  asChild
-                >
-                  <a href="#work">View Work</a>
-                </Button>
-                <Button
-                  variant="outline"
-                  size="lg"
-                  className="kinetic-hover"
-                  asChild
-                >
-                  <a href="https://github.com/meta-pytorch/KernelAgent" target="_blank" rel="noopener noreferrer">
-                    <Github className="mr-2 h-4 w-4" />
-                    KernelAgent
-                  </a>
-                </Button>
-              </div>
             </motion.div>
           </div>
         </div>
