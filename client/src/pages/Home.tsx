@@ -291,7 +291,7 @@ export default function Home() {
             className="mt-12 text-center"
           >
             <Button variant="outline" asChild>
-              <a href="https://scholar.google.com/citations?user=SCHOLAR_ID" target="_blank" rel="noopener noreferrer">
+              <a href="https://scholar.google.com.py/citations?user=Q_YyRC0AAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer">
                 View All Publications
                 <ExternalLink className="ml-2 h-4 w-4" />
               </a>
@@ -424,7 +424,7 @@ export default function Home() {
                 <Linkedin className="w-6 h-6" />
               </a>
               <a
-                href="https://scholar.google.com/citations?user=SCHOLAR_ID"
+                href="https://scholar.google.com.py/citations?user=Q_YyRC0AAAAJ&hl=en&oi=ao"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-foreground transition-colors duration-300"
