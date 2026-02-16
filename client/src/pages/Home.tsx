@@ -87,7 +87,7 @@ export default function Home() {
         />
 
         <div className="container relative z-10">
-          <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16">
             <div className="flex-1 max-w-2xl">
               <motion.div
                 initial={{ opacity: 0, y: 40 }}
@@ -141,7 +141,7 @@ export default function Home() {
               <img
                 src="/headshot.png"
                 alt="Kaiming Cheng"
-                className="w-64 h-64 lg:w-80 lg:h-80 rounded-full object-cover shadow-2xl ring-4 ring-border/50"
+                className="w-56 h-72 lg:w-72 lg:h-96 rounded-2xl object-cover shadow-2xl ring-4 ring-border/50"
               />
             </motion.div>
           </div>
