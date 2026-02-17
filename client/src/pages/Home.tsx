@@ -107,7 +107,7 @@ export default function Home() {
                   Research Scientist at <span className="text-foreground font-medium">Meta Superintelligence Lab</span>
                 </p>
                 <p className="text-lg text-muted-foreground mb-12 leading-relaxed max-w-2xl">
-                  Building autonomous systems for GPU kernel generation. Previously researched security and privacy in augmented reality at the University of Washington.
+                  Building autonomous agentic systems for GPU kernel generation
                 </p>
                 <div className="flex gap-4">
                   <Button
@@ -430,7 +430,7 @@ export default function Home() {
                 <Github className="w-6 h-6" />
               </a>
               <a
-                href="https://linkedin.com/in/kaiming-cheng"
+                href="https://www.linkedin.com/in/kaiming-cheng-b7732aa3/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-foreground transition-colors duration-300"
